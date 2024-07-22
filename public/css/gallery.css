@@ -82,10 +82,14 @@ p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    display: none; /* Add this */
     justify-content: center;
     align-items: center;
-    z-index: 1; /* updated z-index value */
+    z-index: 1000; /* Increase z-index value */
+}
+  
+.show {
+    display: flex; /* Add this */
 }
   
 .fullscreen-image-container {
@@ -100,9 +104,6 @@ p {
     object-fit: contain;
     transform: scale(1);
     transition: transform 0.2s;
-}
-.show {
-    display: flex; /* or display: block; */
 }
   
 .close-button {
