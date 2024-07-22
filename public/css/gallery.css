@@ -1,15 +1,26 @@
+/* Variables */
+:root {
+    --primary-color: #daaa7cdb;
+    --secondary-color: #fde25a;
+    --text-color: #000000;
+    --background-color: #f0f0f0;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --font-size: 16px;
+    --margin: 20px;
+}
+  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
+  
 header {
-    background-color: #daaa7cdb;
-    padding: 20px;
+    background-color: var(--primary-color);
+    padding: var(--margin);
     text-align: center;
 }
-
+  
 nav ul {
     list-style: none;
     margin: 0;
@@ -17,53 +28,53 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
-
+  
 nav li {
-    margin-right: 20px;
+    margin-right: var(--margin);
 }
-
+  
 nav a {
-    color: #000000;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
 }
-
+  
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: var(--margin);
 }
-
+  
 section {
-    background-color: #fde25a;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    padding: var(--margin);
+    margin-bottom: var(--margin);
+    box-shadow: var(--box-shadow);
 }
-
+  
 h1, h2 {
-    color: #000000;
-    margin-bottom: 10px;
+    color: var(--text-color);
+    margin-bottom: var(--margin);
     text-align: center;
 }
-
+  
 p {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin);
 }
-
+  
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+  
 .gallery-container img {
     width: 30%;
-    margin: 10px;
+    margin: var(--margin);
     border-radius: 10px;
 }
-
+  
 .fullscreen-overlay {
     position: fixed;
     top: 0;
@@ -74,12 +85,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1; /* updated z-index value */
 }
   
 .fullscreen-image-container {
     max-width: 100%;
     max-height: 100%;
-    margin: 20px;
+    margin: var(--margin);
 }
   
 .fullscreen-image-container img {
@@ -92,18 +104,18 @@ p {
   
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: var(--margin);
+    right: var(--margin);
     background-color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: var(--margin) var(--margin);
+    font-size: var(--font-size);
     cursor: pointer;
 }
-
+  
 footer {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: var(--background-color);
+    padding: var(--margin);
     text-align: center;
     color: #333;
 }
