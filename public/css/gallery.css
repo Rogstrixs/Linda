@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #daaa7cdb;
     padding: 20px;
     text-align: center;
 }
@@ -35,19 +35,31 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #fde25a;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 p {
     margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 footer {
