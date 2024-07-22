@@ -44,6 +44,7 @@ section {
 h1, h2 {
     color: #000000;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 p {
