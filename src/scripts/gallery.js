@@ -22,6 +22,7 @@ document.querySelectorAll('nav a').forEach(link => {
     const fullScreenImage = createFullScreenImage(clickedImage);
     imageContainer.appendChild(fullScreenImage);
     overlay.appendChild(imageContainer);
+    overlay.className = 'fullscreen-overlay show'; // Add the 'show' class
     document.body.appendChild(overlay);
     addZoomFunctionality(fullScreenImage);
     addCloseButton(overlay);
