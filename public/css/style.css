@@ -28,8 +28,15 @@ nav a {
 }
 
 .Logo-container {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Logo-container img {
+    width: 30%;
+    margin: var(--margin);
+    border-radius: 10px;
 }
 
 main {
