@@ -13,7 +13,7 @@ header {
 nav ul {
     list-style: none;
     margin: 7;
-    padding: 100%;
+    padding: 100;
     display: flex;
     justify-content: space-between;
 }
