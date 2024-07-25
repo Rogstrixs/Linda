@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #474040;
+    background-color: #93fffa;
     padding: 20px;
     text-align: center;
 }
@@ -25,6 +25,7 @@ nav li {
 nav a {
     color: #000000;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .Logo-container {
