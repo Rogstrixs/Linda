@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav li {
-    display: table-column;
+    display: inline;
     margin: 0 15px;
 }
 
