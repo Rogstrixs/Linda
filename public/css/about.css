@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #93fffa;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 7;
+    padding: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.Logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.Logo-container img {
+    width: 60%;
+    margin: var(--margin);
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Create two unequal columns that floats next to each other */
+  /* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    border-radius: 45px;
+}
+  
+  /* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    border-radius: 45px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+footer {
+    background-color: #f0f0f000;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
