@@ -1,95 +1,77 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #93fffa;
-    padding: 20px;
+    background-color: #66ccff;
+    color: white;
+    padding: 10px 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 7;
-    padding: 100;
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav a {
-    color: #000000;
     text-decoration: none;
-    font-weight: bolder;
-}
-
-.Logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.Logo-container img {
-    width: 60%;
-    margin: var(--margin);
-    border-radius: 10px;
+    color: white;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 h1, h2 {
-    color: #333;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 p {
-    margin-bottom: 20px;
-}
-
-/* Create two unequal columns that floats next to each other */
-  /* Left column */
-.leftcolumn {
-    float: left;
-    width: 75%;
-    border-radius: 45px;
-}
-  
-  /* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-    border-radius: 45px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-}
-
-footer {
-    background-color: #f0f0f000;
-    padding: 10px;
     text-align: center;
-    color: #333;
-    position: relative;
+}
+
+/* Hero section styles */
+#hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero button {
+    background-color: #66ccff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
